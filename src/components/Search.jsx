@@ -2,7 +2,12 @@ import React, { useEffect, useRef, useState } from 'react';
 import Home from './Home';
 import Loader from './Loader/Loader';
 
+
+
 const Search = () => {
+
+
+  
   const [data, setData] = useState([]);
   const [input, setInput] = useState("");
   const [loader, setLoader] = useState(true);
@@ -44,6 +49,7 @@ const Search = () => {
     };
   }, []);
 
+
   const handleInputFocus = () => {
     setIsInputFocused(true);
   };
@@ -51,6 +57,8 @@ const Search = () => {
   const handleInputBlur = () => {
     setIsInputFocused(false);
   };
+
+  
 
   return (
     <>
